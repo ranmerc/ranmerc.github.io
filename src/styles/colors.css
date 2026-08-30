@@ -1,0 +1,120 @@
+/*
+ * THIS FILE IS GENERATED.
+ * Do not edit manually.
+ *
+ * Generated from: src/assets/theme.jpg
+ */
+
+:root {
+  --accent-1: #fbfdff;
+  --accent-2: #f5f9fe;
+  --accent-3: #eaf3fe;
+  --accent-4: #dcecfe;
+  --accent-5: #cce2fb;
+  --accent-6: #bad5f4;
+  --accent-7: #a1c4ea;
+  --accent-8: #7eace0;
+  --accent-9: #78a6d9;
+  --accent-10: #6d9acd;
+  --accent-11: #4672a2;
+  --accent-12: #1c3957;
+  --accent-a-1: #0080ff04;
+  --accent-a-2: #0066e60a;
+  --accent-a-3: #006ef315;
+  --accent-a-4: #0075f823;
+  --accent-a-5: #006eeb33;
+  --accent-a-6: #0064d745;
+  --accent-a-7: #005fc75e;
+  --accent-a-8: #005bc281;
+  --accent-a-9: #0057b887;
+  --accent-a-10: #004fa892;
+  --accent-a-11: #003d7fb9;
+  --accent-a-12: #002142e3;
+  --gray-1: #fafcff;
+  --gray-2: #f5faff;
+  --gray-3: #eaf1fa;
+  --gray-4: #e0e9f5;
+  --gray-5: #d7e3f1;
+  --gray-6: #cddcec;
+  --gray-7: #bfd1e6;
+  --gray-8: #a6beda;
+  --gray-9: #7890ac;
+  --gray-10: #6e85a0;
+  --gray-11: #53667c;
+  --gray-12: #15202d;
+  --gray-a-1: #0066ff05;
+  --gray-a-2: #0080ff0a;
+  --gray-a-3: #0055c315;
+  --gray-a-4: #004bad1f;
+  --gray-a-5: #004da628;
+  --gray-a-6: #004d9f32;
+  --gray-a-7: #00489c40;
+  --gray-a-8: #00459559;
+  --gray-a-9: #002e6387;
+  --gray-a-10: #00295891;
+  --gray-a-11: #001c3dac;
+  --gray-a-12: #000c1aea;
+
+  --accent-contrast: #fff;
+  --accent-surface: #f3f8fecc;
+  --gray-surface: #ffffffcc;
+  --background: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --accent-1: #000;
+  --accent-2: #0d1218;
+  --accent-3: #172434;
+  --accent-4: #1b3149;
+  --accent-5: #263e59;
+  --accent-6: #334d6a;
+  --accent-7: #415f7f;
+  --accent-8: #51749c;
+  --accent-9: #78a6d9;
+  --accent-10: #6d9acd;
+  --accent-11: #92bbe8;
+  --accent-12: #d0e3f8;
+  --accent-a-1: #00000000;
+  --accent-a-2: #8bc0ff18;
+  --accent-a-3: #71b1ff34;
+  --accent-a-4: #5facff49;
+  --accent-a-5: #6db2ff59;
+  --accent-a-6: #7bbaff6a;
+  --accent-a-7: #83bfff7f;
+  --accent-a-8: #85beff9c;
+  --accent-a-9: #8dc3ffd9;
+  --accent-a-10: #88c0ffcd;
+  --accent-a-11: #a1ceffe8;
+  --accent-a-12: #d6e9fff8;
+  --gray-1: #000;
+  --gray-2: #0e1318;
+  --gray-3: #182028;
+  --gray-4: #1f2934;
+  --gray-5: #25313e;
+  --gray-6: #2c3a4a;
+  --gray-7: #37485c;
+  --gray-8: #4a627e;
+  --gray-9: #58708b;
+  --gray-10: #677d97;
+  --gray-11: #a4b6ca;
+  --gray-12: #eaeff4;
+  --gray-a-1: #00000000;
+  --gray-a-2: #95caff18;
+  --gray-a-3: #99ccff28;
+  --gray-a-4: #99caff34;
+  --gray-a-5: #99caff3e;
+  --gray-a-6: #98c8ff4a;
+  --gray-a-7: #99c8ff5c;
+  --gray-a-8: #96c7ff7e;
+  --gray-a-9: #a2ceff8b;
+  --gray-a-10: #aed3ff97;
+  --gray-a-11: #cfe6ffca;
+  --gray-a-12: #f5fafff4;
+
+    --accent-contrast: #fff;
+    --accent-surface: #1a243080;
+    --gray-surface: rgba(0, 0, 0, 0.05);
+    --background: #000;
+  }
+}
