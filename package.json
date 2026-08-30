@@ -10,7 +10,8 @@
     "build": "npm run generate-colors && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-colors": "node ./src/scripts/generate-colors.ts"
+    "generate-colors": "node ./src/scripts/generate-colors.ts",
+    "deploy": "./src/scripts/deploy.sh"
   },
   "dependencies": {
     "@astrojs/react": "^6.0.4",
