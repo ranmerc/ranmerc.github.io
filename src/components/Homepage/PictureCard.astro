@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import themeImage from "../../theme.jpg";
+---
+
+<div>
+  <figure>
+    <Image src={themeImage} alt="Zero Point, Sikkim" priority />
+    <figcaption>zero point, sikkim</figcaption>
+  </figure>
+</div>
+
+<style>
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  figure {
+    background-color: #a0bbd0;
+    width: min-content;
+    padding: 5px;
+    border: 1px solid black;
+    transform: rotate(-6deg);
+  }
+  img {
+    width: 500px;
+    height: 350px;
+
+    @media (max-width: 1000px) {
+      width: 300px;
+      height: 210px;
+    }
+  }
+</style>

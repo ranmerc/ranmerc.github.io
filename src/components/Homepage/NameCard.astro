@@ -1,0 +1,39 @@
+---
+
+---
+
+<div class="main">
+  <h1>Kamran Ansari</h1>
+  <div>i like to <span>build</span> stuff</div>
+</div>
+
+<style>
+  .main {
+    font-family: var(--font-playfair-display);
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 4rem;
+
+    @media (max-width: 1000px) {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+
+  .main > div {
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    > span {
+      background-color: #92d4fb;
+      padding: 0 0.2rem;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+</style>

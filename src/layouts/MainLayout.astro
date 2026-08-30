@@ -1,0 +1,39 @@
+---
+import { Font } from "astro:assets";
+import Navbar from "../components/Navbar.astro";
+
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>{title}</title>
+    <Font cssVariable="--font-montserrat" />
+    <Font cssVariable="--font-playfair-display" />
+  </head>
+  <body>
+    <Navbar />
+
+    <slot />
+  </body><style is:global>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100dvh;
+      display: grid;
+      grid-template-rows: min-content 1fr;
+    }
+  </style>
+</html>

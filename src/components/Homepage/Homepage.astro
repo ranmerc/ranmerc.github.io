@@ -1,0 +1,26 @@
+---
+import NameCard from "./NameCard.astro";
+import PictureCard from "./PictureCard.astro";
+---
+
+<main>
+  <NameCard />
+  <PictureCard />
+</main>
+
+<style>
+  main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    padding: 4rem 3rem;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      align-items: end;
+      align-content: center;
+      row-gap: 4rem;
+      padding: 1rem;
+    }
+  }
+</style>

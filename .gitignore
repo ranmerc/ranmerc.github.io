@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# theme image
+# don't need to keep this in commit history
+# will be used at build time
+src/theme.jpg

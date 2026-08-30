@@ -1,0 +1,88 @@
+---
+
+---
+
+<nav>
+  <div>neko div</div>
+  <a href="/blog">blog</a>
+  <a href="/projects">projects</a>
+  <a href="/interests">interests</a>
+  <a href="/uses">uses</a>
+  <a href="/about">about</a>
+</nav>
+
+<style>
+  nav {
+    display: grid;
+    grid-template-columns: 3fr repeat(5, 1fr);
+
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "neko neko neko about"
+        "blog uses interests projects";
+    }
+  }
+
+  nav > * {
+    font-family: var(--font-montserrat);
+    padding: 2rem 0;
+    text-align: center;
+    border-block-end: 2px solid black;
+
+    @media (max-width: 1000px) {
+      padding: 1rem 0;
+      border-block-end: 1px solid black;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border-inline-start: 2px solid black;
+
+    &:nth-of-type(2n + 1) {
+      background-color: #a0bbd0;
+    }
+
+    @media (max-width: 1000px) {
+      font-size: 1rem;
+      border-inline-start: 1px solid black;
+
+      &:nth-of-type(2n + 1) {
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    div {
+      grid-area: neko;
+    }
+
+    a:nth-of-type(1) {
+      grid-area: blog;
+      background-color: #a0bbd0;
+    }
+
+    a:nth-of-type(2) {
+      grid-area: projects;
+    }
+
+    a:nth-of-type(3) {
+      grid-area: interests;
+      background-color: #a0bbd0;
+    }
+
+    a:nth-of-type(4) {
+      grid-area: uses;
+    }
+
+    a:nth-of-type(5) {
+      grid-area: about;
+      background-color: #a0bbd0;
+    }
+  }
+</style>
