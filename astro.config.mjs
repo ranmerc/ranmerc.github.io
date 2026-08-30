@@ -20,4 +20,5 @@ export default defineConfig({
       fallbacks: ["serif"],
     },
   ],
+  site: "https://ranmerc.github.io",
 });
