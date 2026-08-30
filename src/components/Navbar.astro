@@ -1,12 +1,11 @@
 ---
-
+import Neko from "./Neko/Neko";
 ---
 
 <nav>
-  <div>neko div</div>
+  <div id="neko"><Neko client:load /></div>
   <a href="/blog">blog</a>
   <a href="/projects">projects</a>
-  <a href="/interests">interests</a>
   <a href="/uses">uses</a>
   <a href="/about">about</a>
 </nav>
@@ -14,19 +13,19 @@
 <style>
   nav {
     display: grid;
-    grid-template-columns: 3fr repeat(5, 1fr);
+    grid-template-columns: 3fr repeat(4, 1fr);
 
     @media (max-width: 1000px) {
       grid-template-columns: repeat(4, 1fr);
       grid-template-areas:
-        "neko neko neko about"
-        "blog uses interests projects";
+        "neko neko neko neko"
+        "blog projects uses about";
     }
   }
 
   nav > * {
     font-family: var(--font-montserrat);
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     text-align: center;
     border-block-end: 2px solid var(--accent-12);
 
@@ -34,6 +33,13 @@
       padding: 1rem 0;
       border-block-end: 1px solid var(--accent-12);
     }
+  }
+
+  #neko {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
   }
 
   a {
@@ -54,12 +60,17 @@
       &:nth-of-type(2n + 1) {
         background-color: transparent;
       }
+
+      &:first-of-type {
+        border-inline-start: none;
+      }
     }
   }
 
   @media (max-width: 1000px) {
-    div {
+    #neko {
       grid-area: neko;
+      padding-block-end: 0.5rem;
     }
 
     a:nth-of-type(1) {
@@ -72,17 +83,12 @@
     }
 
     a:nth-of-type(3) {
-      grid-area: interests;
+      grid-area: uses;
       background-color: var(--gray-8);
     }
 
     a:nth-of-type(4) {
-      grid-area: uses;
-    }
-
-    a:nth-of-type(5) {
       grid-area: about;
-      background-color: var(--gray-8);
     }
   }
 </style>
