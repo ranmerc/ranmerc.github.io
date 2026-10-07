@@ -14,6 +14,8 @@ cd "$BUILD_DIR"
 # Init a fresh git repo in the build output
 rm .DS_Store
 touch .nojekyll
+touch CNAME
+echo -n 'ranmerc.com' > CNAME
 git init -q
 git config user.name "Kamran Ansari"
 git config user.email "ranmerc@outlook.com"
